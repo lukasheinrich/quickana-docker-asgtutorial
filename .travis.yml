@@ -7,7 +7,3 @@ before_install:
   - docker build -t lukasheinrich/quickana-tutorial-ath .
 script:
   - docker run -it lukasheinrich/quickana-tutorial-ath ./tests/runtest.sh
-# - docker cp $(docker ps -lq):/analysis/submitDir results
-# after_success:
-# - bash deploy.sh
-# - docker push lukasheinrich/quickana-tutorial

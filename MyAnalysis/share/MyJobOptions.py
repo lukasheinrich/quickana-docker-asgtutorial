@@ -17,6 +17,13 @@ alg.RootDirName      = "/"
 
 algSeq += alg
 
+
+quickAna = CfgMgr.ana__QuickAna()
+quickAna.electronDef = "default"
+ToolSvc += quickAna
+
+alg.quickAna = quickAna
+
 # set the number of events
 theApp.EvtMax = -1
 

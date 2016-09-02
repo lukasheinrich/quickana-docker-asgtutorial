@@ -10,6 +10,9 @@ use GaudiInterface 	GaudiInterface-* 	External
 private
 
 use  AsgTools                   AsgTools-*                      Control/AthToolSupport
+use QuickAna QuickAna-* PhysicsAnalysis/TopPhys
+
+
 use AthenaBaseComps AthenaBaseComps-* Control
 end_private
 
@@ -25,6 +28,3 @@ apply_pattern component_library
 
 apply_pattern declare_joboptions files="*.py"
 apply_pattern declare_python_modules files="*.py"
-
-
-
